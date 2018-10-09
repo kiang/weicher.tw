@@ -36,33 +36,42 @@
     </header>
     <div class="container">
         <div class="map" id="map"></div>
+        <div class="map__mask"></div>
         <div class="list">
                         <div class="list__item">
                 <div class="list__item__title">
-                    <a href="culture.html">文化首府</a>
+                    <a href="https://weicher.tw/culture.html">文化首府</a>
                 </div>
             </div>
                         <div class="list__item">
                 <div class="list__item__title">
-                    <a href="economic.html">產經重鎮</a>
+                    <a href="https://weicher.tw/economic.html">產經重鎮</a>
                 </div>
             </div>
                         <div class="list__item">
                 <div class="list__item__title">
-                    <a href="smart.html">智慧新都</a>
+                    <a href="https://weicher.tw/smart.html">智慧新都</a>
                 </div>
             </div>
                         <div class="list__item">
                 <div class="list__item__title">
-                    <a href="creative.html">創生城鄉</a>
+                    <a href="https://weicher.tw/creative.html">創生城鄉</a>
                 </div>
             </div>
                         <div class="list__item">
                 <div class="list__item__title">
-                    <a href="hope.html">希望家園</a>
+                    <a href="https://weicher.tw/hope.html">希望家園</a>
                 </div>
             </div>
-                    </div>
+                        <div class="list__item activeorder">
+                <div class="list__item__title active">
+                    <a href="https://weicher.tw/politics_map.html" class="activeitem" id="list__item__map__text">政見地圖</a>
+                    <a href="https://weicher.tw/politics_map.html" class="activeitem" id="list__item__map__img"></a>
+                    <!-- for control -->
+                    <label id="label_controllist" for="controllist"></label>
+                </div>
+            </div>
+        </div>
         <label class="mapchoose__control" for="controlmapchoosecontent"></label>
         <div class="mapchoosecontent">
           <select class="mapchoosecontent__select" name="">
@@ -75,23 +84,31 @@
           </select>
           <div class="mapchoosecontent__choose">
             <div class="mapchoosecontent__choose__location">
-              <label id="industry" for="location1">工業區</label>
-              <label class="btnLayerPool" data-id="points">辦公大樓</label>
-              <label class="btnLayerPool" data-id="temples">廟宇</label>
-              <label class="btnLayerPool" data-id="points">工廠</label>
-              <label class="btnLayerPool" data-id="tbike">腳踏車</label>
-              <label class="btnLayerPool" data-id="monorail">捷運站(輕軌)</label>
-              <label class="btnLayerPool" data-id="park">公園</label>
-              <label class="btnLayerPool" data-id="ac">活動中心</label>
+              <label class="btnLayerPool" data-id="points"><img src="https://weicher.tw/img/factory-b@2x.png" alt="">工業區</label>
+              <label class="btnLayerPool" data-id="tainan"><img src="https://weicher.tw/img/building-b@2x.png" alt="">市府機關</label>
+              <label class="btnLayerPool" data-id="temples"><img src="https://weicher.tw/img/temple-b@2x.png" alt="">廟宇</label>
+              <label class="btnLayerPool" data-id="points"><img src="https://weicher.tw/img/factory-b@2x.png" alt="">工廠</label>
+              <label class="btnLayerPool" data-id="tbike"><img src="https://weicher.tw/img/bike-b@2x.png" alt="">腳踏車</label>
+              <label class="btnLayerPool" data-id="monorail"><img src="https://weicher.tw/img/mrt-b@2x.png" alt="">捷運站(輕軌)</label>
+              <label class="btnLayerPool" data-id="park"><img src="https://weicher.tw/img/park-b@2x.png" alt="">公園</label>
+              <label class="btnLayerPool" data-id="ac"><img src="https://weicher.tw/img/activity-b@2x.png" alt="">活動中心</label>
+              <label class="btnLayerPool" data-id="points"><img src="https://weicher.tw/img/culture-b@2x.png" alt="">文化園區</label>
+              <label class="btnLayerPool" data-id="parking"><img src="https://weicher.tw/img/parking-b@2x.png" alt="">停車場</label>
+              <label class="btnLayerPool" data-id="walking"><img src="https://weicher.tw/img/walk-b@2x.png" alt="">步行區</label>
+              <label class="btnLayerPool" data-id="points"><img src="https://weicher.tw/img/library-b@2x.png" alt="">圖書館</label>
+              <label class="btnLayerPool" data-id="points"><img src="https://weicher.tw/img/house-b@2x.png" alt="">老屋</label>
+              <label class="btnLayerPool" data-id="points"><img src="https://weicher.tw/img/highway-b@2x.png" alt="">快速道路</label>
             </div>
           </div>
           <div class="mapchoosecontent__introduction" id="location1_intro">
             <label class="mapchoosecontent__introduction__control" for="location1"></label>
-            <div class="mapchoosecontent__introduction__icon"></div>
+            <div class="mapchoosecontent__introduction__icon">
+              <img src="https://weicher.tw/img/factory-b@2x.png" alt="">
+            </div>
             <div class="mapchoosecontent__introduction__title">工業區</div>
             <div class="mapchoosecontent__introduction__position">
               <div class="mapchoosecontent__introduction__position__pic">
-                <img src="" alt="">
+                <img src="https://weicher.tw/img/factory@2x.png" alt="">
               </div>
               <div class="mapchoosecontent__introduction__position__text">
                 <div class="mapchoosecontent__introduction__position__name">點選地點名稱</div>

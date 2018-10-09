@@ -34,12 +34,15 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <iframe src="https://www.youtube.com/embed/7RJSjht6mtA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- 新樹里共餐 -->
+        <iframe src="https://www.youtube.com/embed/QWi2Sxa66OY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="swiper-slide">
+        <!-- 台南特有種 -->
         <iframe src="https://www.youtube.com/embed/x19vVPJL1nw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="swiper-slide">
+        <!-- 西瓜雕刻 -->
         <iframe src="https://www.youtube.com/embed/naiDj1nSDGw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="swiper-slide">
@@ -68,26 +71,31 @@
         </div>
         <div class="politics__content">
             <div class="politics__content__cardcontainer">
-                <a class="politics__content__cardcontainer__cards" href="https://weicher.tw/culture.html">
-                    <img src="https://weicher.tw/photo/culture.jpg" alt="">
-                    <h4>文化首府</h4>
-                </a>
-                <a class="politics__content__cardcontainer__cards" href="https://weicher.tw/smart.html">
-                    <img src="https://weicher.tw/photo/smart_city.png" alt="">
-                    <h4>智慧新都</h4>
-                </a>
-                <a class="politics__content__cardcontainer__cards" href="https://weicher.tw/economic.html">
-                    <img src="https://weicher.tw/photo/ecnomic.jpg" alt="">
-                    <h4>產經重鎮</h4>
-                </a>
-                <a class="politics__content__cardcontainer__cards" href="https://weicher.tw/creative.html">
-                    <img src="https://weicher.tw/photo/creative.jpg" alt="">
-                    <h4>創生城鄉</h4>
-                </a>
-                <a class="politics__content__cardcontainer__cards" href="https://weicher.tw/hope.html">
-                    <img src="https://weicher.tw/photo/hope.jpg" alt="">
-                    <h4>希望家園</h4>
-                </a>
+              <div class="politics__content__cardcontainer__cards">
+                  <img src="https://weicher.tw/photo/culture.jpg" alt="">
+                  <div class="politics__content__cardcontainer__cards__mask"></div>
+                  <a href="https://weicher.tw/culture.html">文化首府</a>
+              </div>
+              <div class="politics__content__cardcontainer__cards">
+                  <img src="https://weicher.tw/photo/smart_city.png" alt="">
+                  <div class="politics__content__cardcontainer__cards__mask"></div>
+                  <a href="https://weicher.tw/smart.html">智慧新都</a>
+              </div>
+              <div class="politics__content__cardcontainer__cards">
+                  <img src="https://weicher.tw/photo/ecnomic.jpg" alt="">
+                  <div class="politics__content__cardcontainer__cards__mask"></div>
+                  <a href="https://weicher.tw/ecnomic.html">產經重鎮</a>
+              </div>
+              <div class="politics__content__cardcontainer__cards">
+                  <img src="https://weicher.tw/photo/creative.jpg" alt="">
+                  <div class="politics__content__cardcontainer__cards__mask"></div>
+                  <a href="https://weicher.tw/creative.html">創生城鄉</a>
+              </div>
+              <div class="politics__content__cardcontainer__cards">
+                  <img src="https://weicher.tw/photo/hope.jpg" alt="">
+                  <div class="politics__content__cardcontainer__cards__mask"></div>
+                  <a href="https://weicher.tw/hope.html">希望家園</a>
+              </div>
             </div>
         </div>
     </div>
@@ -239,6 +247,7 @@
 			});
       $(function() {
         var swiper = new Swiper('.swiper-container', {
+          autoHeight: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,

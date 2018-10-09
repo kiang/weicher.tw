@@ -18,98 +18,44 @@ var styleRed = new ol.style.Style({
 });
 
 var styleParking = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 10,
-    fill: new ol.style.Fill({
-      color: '#00ff00'
-    })
-  }),
-  text: new ol.style.Text({
-    font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
-    fill: new ol.style.Fill({
-      color: 'blue'
-    }),
-    text: "P"
+  image: new ol.style.Icon({
+    scale: 0.3,
+    src: 'img/parking@2x.png'
   })
 });
 
 var styleTainan = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 10,
-    fill: new ol.style.Fill({
-      color: '#ccff00'
-    })
-  }),
-  text: new ol.style.Text({
-    font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
-    fill: new ol.style.Fill({
-      color: 'blue'
-    }),
-    text: "G"
+  image: new ol.style.Icon({
+    scale: 0.3,
+    src: 'img/building@2x.png'
   })
 });
 
 var styleParks = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 10,
-    fill: new ol.style.Fill({
-      color: '#00cccc'
-    })
-  }),
-  text: new ol.style.Text({
-    font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
-    fill: new ol.style.Fill({
-      color: 'green'
-    }),
-    text: "P"
+  image: new ol.style.Icon({
+    scale: 0.3,
+    src: 'img/park@2x.png'
   })
 });
 
 var styleAC = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 10,
-    fill: new ol.style.Fill({
-      color: '#cccc00'
-    })
-  }),
-  text: new ol.style.Text({
-    font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
-    fill: new ol.style.Fill({
-      color: 'red'
-    }),
-    text: "A"
+  image: new ol.style.Icon({
+    scale: 0.3,
+    src: 'img/activity@2x.png'
   })
 });
 
 var styleTemple = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 10,
-    fill: new ol.style.Fill({
-      color: '#00cccc'
-    })
-  }),
-  text: new ol.style.Text({
-    font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
-    fill: new ol.style.Fill({
-      color: 'black'
-    }),
-    text: "M"
+  image: new ol.style.Icon({
+    scale: 0.3,
+    src: 'img/temple@2x.png'
   })
 });
 
 var styleTbike = new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 10,
-    fill: new ol.style.Fill({
-      color: '#ffff00'
-    })
-  }),
-  text: new ol.style.Text({
-    font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
-    fill: new ol.style.Fill({
-      color: 'black'
-    }),
-    text: "T"
+  image: new ol.style.Icon({
+    scale: 0.3,
+    src: 'img/bike@2x.png'
   })
 });
 
