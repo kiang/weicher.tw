@@ -1,0 +1,799 @@
+@charset "UTF-8";
+/* line 1, ../sass/modules/_normalize.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Tahoma, Arial, “PingFang SC”,  “Microsoft YaHei”, “WenQuanYi Micro Hei”;
+}
+
+/* line 7, ../sass/modules/_normalize.scss */
+li {
+  list-style: none;
+}
+
+/* line 10, ../sass/modules/_normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, ../sass/modules/_extendclass.scss */
+.header__container, .footer__container, .politics__content__cardcontainer, .news__content__container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media all and (min-width: 343px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .politics__content__cardcontainer, .news__content__container {
+    max-width: 343px;
+  }
+}
+@media all and (min-width: 580px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .politics__content__cardcontainer, .news__content__container {
+    max-width: 580px;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .politics__content__cardcontainer, .news__content__container {
+    max-width: 880px;
+  }
+}
+@media all and (min-width: 1300px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .politics__content__cardcontainer, .news__content__container {
+    max-width: 1300px;
+  }
+}
+
+/* line 5, ../sass/partials/_header.scss */
+header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+.header__container {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (min-width: 880px) {
+  /* line 9, ../sass/partials/_header.scss */
+  .header__container {
+    padding: 0 0 5px;
+  }
+}
+/* line 18, ../sass/partials/_header.scss */
+.header__container__logo {
+  display: block;
+  background-image: url("../img/logo-big@2x.png");
+  background-size: cover;
+  width: 100px;
+  height: 38px;
+}
+@media all and (min-width: 880px) {
+  /* line 18, ../sass/partials/_header.scss */
+  .header__container__logo {
+    width: 161px;
+    height: 60px;
+  }
+}
+/* line 29, ../sass/partials/_header.scss */
+.header__container__nav {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 4;
+  height: calc(100vh - 70px);
+  justify-content: space-between;
+}
+@media all and (min-width: 880px) {
+  /* line 29, ../sass/partials/_header.scss */
+  .header__container__nav {
+    height: auto;
+    padding-top: 20px;
+    position: static;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+/* line 48, ../sass/partials/_header.scss */
+.header__container__nav__items {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: white;
+}
+@media all and (min-width: 880px) {
+  /* line 48, ../sass/partials/_header.scss */
+  .header__container__nav__items {
+    width: auto;
+    flex-direction: row;
+    order: 2;
+  }
+}
+/* line 58, ../sass/partials/_header.scss */
+.header__container__nav__items a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  padding: 13px 0;
+  font-weight: 600;
+}
+@media all and (min-width: 880px) {
+  /* line 58, ../sass/partials/_header.scss */
+  .header__container__nav__items a {
+    margin: 0 15px;
+    padding: 13px 12px;
+    font-size: 17px;
+  }
+  /* line 70, ../sass/partials/_header.scss */
+  .header__container__nav__items a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-bottom: 5px solid #009a00;
+    width: 100%;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 83, ../sass/partials/_header.scss */
+  .header__container__nav__items .header_avtive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-bottom: 5px solid #009a00;
+    width: 100%;
+  }
+}
+/* line 95, ../sass/partials/_header.scss */
+.header__container__nav__icon {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+@media all and (min-width: 880px) {
+  /* line 95, ../sass/partials/_header.scss */
+  .header__container__nav__icon {
+    margin-top: 0;
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+/* line 105, ../sass/partials/_header.scss */
+.header__container__nav__icon a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+/* line 110, ../sass/partials/_header.scss */
+.header__container__nav__icon a:hover img {
+  opacity: 0.7;
+}
+/* line 113, ../sass/partials/_header.scss */
+.header__container__nav__icon a img {
+  width: 100%;
+}
+
+/* line 122, ../sass/partials/_header.scss */
+header label {
+  width: 26px;
+  height: 25px;
+  background-image: url("../img/menu@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 880px) {
+  /* line 122, ../sass/partials/_header.scss */
+  header label {
+    display: none;
+  }
+}
+/* line 132, ../sass/partials/_header.scss */
+header input {
+  display: none;
+}
+/* line 135, ../sass/partials/_header.scss */
+header .header__container__nav {
+  display: none;
+}
+@media all and (min-width: 880px) {
+  /* line 135, ../sass/partials/_header.scss */
+  header .header__container__nav {
+    display: flex;
+  }
+}
+/* line 141, ../sass/partials/_header.scss */
+header #burger:checked ~ .header__container__nav {
+  display: flex;
+  flex-direction: column;
+}
+/* line 145, ../sass/partials/_header.scss */
+header #burger:checked ~ label {
+  background-image: url("../img/close@2x.png");
+}
+
+/* line 6, ../sass/partials/_footer.scss */
+footer {
+  background-color: #f3f3f3;
+}
+
+/* line 9, ../sass/partials/_footer.scss */
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 38px;
+}
+
+/* line 17, ../sass/partials/_footer.scss */
+.footer__logo {
+  width: 88px;
+  height: 96px;
+}
+/* line 20, ../sass/partials/_footer.scss */
+.footer__logo img {
+  width: 88px;
+  height: 96px;
+}
+
+/* line 25, ../sass/partials/_footer.scss */
+.footer__copyright {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  margin-top: 14px;
+}
+@media all and (min-width: 580px) {
+  /* line 25, ../sass/partials/_footer.scss */
+  .footer__copyright {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 33, ../sass/partials/_footer.scss */
+.footer__icons {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+@media all and (min-width: 580px) {
+  /* line 33, ../sass/partials/_footer.scss */
+  .footer__icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+/* line 42, ../sass/partials/_footer.scss */
+.footer__icons a {
+  display: block;
+  width: 24px;
+  height: 23px;
+  margin: 0 8px;
+}
+/* line 47, ../sass/partials/_footer.scss */
+.footer__icons a:hover img {
+  opacity: 0.7;
+}
+/* line 50, ../sass/partials/_footer.scss */
+.footer__icons a img {
+  width: 100%;
+}
+
+/* line 4, ../sass/index.scss */
+.swiper-slide iframe {
+  width: 100vw;
+  height: 56.25vw;
+  max-height: calc(100vh - 70px);
+}
+@media all and (min-width: 880px) {
+  /* line 4, ../sass/index.scss */
+  .swiper-slide iframe {
+    max-height: calc(100vh - 130px);
+  }
+}
+
+/* line 15, ../sass/index.scss */
+figure {
+  padding-top: 24px;
+}
+@media all and (min-width: 880px) {
+  /* line 15, ../sass/index.scss */
+  figure {
+    max-width: 880px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+/* line 23, ../sass/index.scss */
+.figure__do {
+  width: 50%;
+  margin: 0 auto;
+}
+@media all and (min-width: 880px) {
+  /* line 23, ../sass/index.scss */
+  .figure__do {
+    width: 25%;
+    position: absolute;
+    left: -10px;
+    bottom: 50px;
+    z-index: 2;
+  }
+}
+/* line 33, ../sass/index.scss */
+.figure__do img {
+  width: 100%;
+}
+
+/* line 37, ../sass/index.scss */
+.figure__pic {
+  position: relative;
+}
+@media all and (min-width: 880px) {
+  /* line 37, ../sass/index.scss */
+  .figure__pic {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* line 43, ../sass/index.scss */
+.figure__pic__imgmobile {
+  width: 100%;
+}
+@media all and (min-width: 880px) {
+  /* line 43, ../sass/index.scss */
+  .figure__pic__imgmobile {
+    display: none;
+  }
+}
+/* line 49, ../sass/index.scss */
+.figure__pic__imgweb {
+  display: none;
+}
+@media all and (min-width: 880px) {
+  /* line 49, ../sass/index.scss */
+  .figure__pic__imgweb {
+    display: block;
+  }
+}
+/* line 55, ../sass/index.scss */
+.figure__pic img {
+  width: 100%;
+}
+
+/* line 59, ../sass/index.scss */
+.figure__intro {
+  width: 168px;
+  height: 162px;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  background-image: url("../img/about-mobile@2x.png");
+  background-size: cover;
+  background-position: center;
+}
+@media all and (min-width: 880px) {
+  /* line 59, ../sass/index.scss */
+  .figure__intro {
+    background-image: url("../img/about@2x.png");
+    width: 240px;
+    height: 220px;
+    right: -40px;
+  }
+}
+
+/* line 75, ../sass/index.scss */
+.politics {
+  padding-top: 80px;
+}
+/* line 77, ../sass/index.scss */
+.politics__title {
+  width: 116px;
+  height: 50px;
+  margin: 0 auto 15px;
+}
+@media all and (min-width: 880px) {
+  /* line 77, ../sass/index.scss */
+  .politics__title {
+    width: 194px;
+    height: 84px;
+  }
+}
+/* line 85, ../sass/index.scss */
+.politics__title img {
+  width: 100%;
+}
+/* line 89, ../sass/index.scss */
+.politics__content {
+  background-image: url("../img/topic-background-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media all and (min-width: 580px) {
+  /* line 89, ../sass/index.scss */
+  .politics__content {
+    background-image: url("../img/topic-background@2x.png");
+  }
+}
+/* line 97, ../sass/index.scss */
+.politics__content__cardcontainer {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 103, ../sass/index.scss */
+.politics__content__cardcontainer__cards {
+  width: 43%;
+  position: relative;
+  margin: 0 10px 20px;
+  background-color: #009a00;
+  font-size: 0;
+}
+@media all and (min-width: 580px) {
+  /* line 103, ../sass/index.scss */
+  .politics__content__cardcontainer__cards {
+    width: 29%;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 103, ../sass/index.scss */
+  .politics__content__cardcontainer__cards {
+    width: 30%;
+  }
+}
+/* line 115, ../sass/index.scss */
+.politics__content__cardcontainer__cards:hover {
+  transform: translate(-10px, 10px);
+  transition: transform 0.1s linear;
+}
+/* line 119, ../sass/index.scss */
+.politics__content__cardcontainer__cards:hover img {
+  transform: translate(10px, -10px);
+  -webkit-filter: brightness(0.5);
+  transition: transform 0.1s linear;
+}
+/* line 124, ../sass/index.scss */
+.politics__content__cardcontainer__cards:hover a {
+  transform: translate(10px, -10px);
+  transition: transform 0.1s linear;
+}
+/* line 128, ../sass/index.scss */
+.politics__content__cardcontainer__cards:hover .politics__content__cardcontainer__cards__mask {
+  transform: translate(10px, -10px);
+  transition: transform 0.1s linear;
+}
+/* line 132, ../sass/index.scss */
+.politics__content__cardcontainer__cards img {
+  width: 100%;
+  height: auto;
+}
+/* line 136, ../sass/index.scss */
+.politics__content__cardcontainer__cards a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 8px;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+@media all and (min-width: 880px) {
+  /* line 136, ../sass/index.scss */
+  .politics__content__cardcontainer__cards a {
+    bottom: 20px;
+    font-size: 30px;
+  }
+}
+/* line 150, ../sass/index.scss */
+.politics__content__cardcontainer__cards__mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/mask@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 166, ../sass/index.scss */
+.news__title {
+  width: 93px;
+  height: 46px;
+  margin: 60px auto 15px;
+}
+@media all and (min-width: 880px) {
+  /* line 166, ../sass/index.scss */
+  .news__title {
+    width: 155px;
+    height: 76px;
+  }
+}
+/* line 174, ../sass/index.scss */
+.news__title img {
+  width: 100%;
+}
+/* line 178, ../sass/index.scss */
+.news__content {
+  background-color: #f3f3f3;
+}
+/* line 180, ../sass/index.scss */
+.news__content__container {
+  padding: 60px 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 186, ../sass/index.scss */
+.news__content__container__card {
+  width: 100%;
+}
+@media all and (min-width: 580px) {
+  /* line 186, ../sass/index.scss */
+  .news__content__container__card {
+    width: 45%;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 186, ../sass/index.scss */
+  .news__content__container__card {
+    width: 31%;
+  }
+}
+/* line 196, ../sass/index.scss */
+.news__content__container__card__hovereffect:hover .news__content__container__card__pic__picture img {
+  -webkit-filter: brightness(0.5);
+  z-index: 2;
+}
+/* line 200, ../sass/index.scss */
+.news__content__container__card__hovereffect:hover .news__content__container__card__pic__date::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #009a00;
+  border-left: 5px solid #009a00;
+}
+/* line 210, ../sass/index.scss */
+.news__content__container__card__hovereffect:hover .news__content__container__card__text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #009a00;
+  border-left: 5px solid #009a00;
+}
+/* line 221, ../sass/index.scss */
+.news__content__container__card__pic {
+  position: relative;
+}
+/* line 223, ../sass/index.scss */
+.news__content__container__card__pic__title {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  width: 91px;
+  padding: 4px 22px;
+  background-color: #009a00;
+  color: white;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  z-index: 3;
+}
+/* line 235, ../sass/index.scss */
+.news__content__container__card__pic__picture {
+  width: 100%;
+  font-size: 0;
+  padding-left: 8px;
+  margin: 0 auto;
+}
+/* line 240, ../sass/index.scss */
+.news__content__container__card__pic__picture img {
+  width: 100%;
+  height: 246px;
+  object-fit: cover;
+}
+@media all and (min-width: 580px) {
+  /* line 240, ../sass/index.scss */
+  .news__content__container__card__pic__picture img {
+    width: 100%;
+    height: 186px;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 240, ../sass/index.scss */
+  .news__content__container__card__pic__picture img {
+    width: 100%;
+    height: 194px;
+  }
+}
+@media all and (min-width: 1300px) {
+  /* line 240, ../sass/index.scss */
+  .news__content__container__card__pic__picture img {
+    width: 100%;
+    height: 268px;
+  }
+}
+/* line 258, ../sass/index.scss */
+.news__content__container__card__pic__date {
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  background-color: white;
+  letter-spacing: 0.3px;
+  color: #4a4a4a;
+  width: 105px;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: 500;
+}
+/* line 271, ../sass/index.scss */
+.news__content__container__card__text {
+  display: block;
+  padding: 14px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #4a4a4a;
+  background-color: white;
+  font-weight: 500;
+  margin: 20px 0 8px;
+  position: relative;
+}
+/* line 281, ../sass/index.scss */
+.news__content__container__card__text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 0;
+  height: 0;
+}
+/* line 289, ../sass/index.scss */
+.news__content__container__card__text:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #009a00;
+  border-left: 5px solid #009a00;
+}
+/* line 296, ../sass/index.scss */
+.news__content__container__card__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 299, ../sass/index.scss */
+.news__content__container__card__tags a {
+  display: block;
+  margin: 8px 8px 0 0;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  padding: 4px 13px;
+  background-color: #009a00;
+  color: white;
+}
+/* line 307, ../sass/index.scss */
+.news__content__container__card__tags a:hover {
+  opacity: 0.7;
+}
+/* line 312, ../sass/index.scss */
+.news__content__container__card__icons {
+  margin: 14px 0 42px;
+  display: flex;
+}
+/* line 315, ../sass/index.scss */
+.news__content__container__card__icons a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+/* line 320, ../sass/index.scss */
+.news__content__container__card__icons a:hover img {
+  opacity: 0.7;
+}
+/* line 323, ../sass/index.scss */
+.news__content__container__card__icons a img {
+  width: 100%;
+}
+/* line 329, ../sass/index.scss */
+.news__content__container__more {
+  text-align: center;
+  width: 100%;
+}
+/* line 332, ../sass/index.scss */
+.news__content__container__more a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+/* line 336, ../sass/index.scss */
+.news__content__container__more a i {
+  color: #4a4a4a;
+}
+
+/* line 345, ../sass/index.scss */
+.fundraising__title {
+  width: 93px;
+  height: 46px;
+  margin: 30px auto 15px;
+}
+@media all and (min-width: 880px) {
+  /* line 345, ../sass/index.scss */
+  .fundraising__title {
+    width: 155px;
+    height: 76px;
+  }
+}
+/* line 353, ../sass/index.scss */
+.fundraising__title img {
+  width: 100%;
+}
+/* line 357, ../sass/index.scss */
+.fundraising__pic {
+  width: 100%;
+}
+@media all and (min-width: 580px) {
+  /* line 357, ../sass/index.scss */
+  .fundraising__pic {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* line 363, ../sass/index.scss */
+.fundraising__pic__imgmobile {
+  width: 100%;
+}
+@media all and (min-width: 580px) {
+  /* line 363, ../sass/index.scss */
+  .fundraising__pic__imgmobile {
+    display: none;
+  }
+}
+/* line 369, ../sass/index.scss */
+.fundraising__pic__web {
+  width: 100%;
+  display: none;
+}
+@media all and (min-width: 580px) {
+  /* line 369, ../sass/index.scss */
+  .fundraising__pic__web {
+    display: block;
+  }
+}
+/* line 377, ../sass/index.scss */
+.fundraising__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 15px;
+}
+/* line 382, ../sass/index.scss */
+.fundraising__back a {
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}

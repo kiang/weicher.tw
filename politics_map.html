@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>政見地圖 | 台南市長候選人 黃偉哲 #做得更好 #過得更好</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://weicher.tw/stylesheets/politics_map.css" />
+    </head>
+
+<body>
+    <input type="checkbox" id="controllist">
+    <input type="checkbox" id="controlmapchoosecontent">
+    <input type="checkbox" id="location1">
+    <header>
+        <div class="header__container">
+            <a href="https://weicher.tw/index.html" class="header__container__logo"></a>
+            <input type="checkbox" id="burger">
+            <label for="burger"></label>
+            <div class="header__container__nav">
+                <div class="header__container__nav__items">
+                  <a href="https://weicher.tw/news.html">最新消息</a>
+                  <a href="https://weicher.tw/videos.html">影音專區</a>
+                  <a href="https://weicher.tw/politics.html">政見介紹</a>
+                  <a href="https://weicher.tw/about.html">關於偉哲</a>
+                </div>
+                <div class="header__container__nav__icon">
+                  <a href="https://zh-tw.facebook.com/taiwanweicher/" target="_blank"><img src="https://weicher.tw/img/fb@2x.png" alt="臉書分享"></a>
+                  <a href="https://line.me/ti/p/@taiwanweicher" target="_blank"><img src="https://weicher.tw/img/lineat@2x.png" alt=""></a>
+                  <a href="https://www.youtube.com/channel/UCI0g-MeQBe92yzjfVgMw6zQ" target="_blank"><img src="https://weicher.tw/img/youtube@2x.png" alt=""></a>
+                  <a href="https://m.me/taiwanweicher" target="_blank"><img src="https://weicher.tw/img/massenger@2x.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="map" id="map"></div>
+        <div class="list">
+                        <div class="list__item">
+                <div class="list__item__title">
+                    <a href="culture.html">文化首府</a>
+                </div>
+            </div>
+                        <div class="list__item">
+                <div class="list__item__title">
+                    <a href="economic.html">產經重鎮</a>
+                </div>
+            </div>
+                        <div class="list__item">
+                <div class="list__item__title">
+                    <a href="smart.html">智慧新都</a>
+                </div>
+            </div>
+                        <div class="list__item">
+                <div class="list__item__title">
+                    <a href="creative.html">創生城鄉</a>
+                </div>
+            </div>
+                        <div class="list__item">
+                <div class="list__item__title">
+                    <a href="hope.html">希望家園</a>
+                </div>
+            </div>
+                    </div>
+        <label class="mapchoose__control" for="controlmapchoosecontent"></label>
+        <div class="mapchoosecontent">
+          <select class="mapchoosecontent__select" name="">
+            <option value="">全部臺南地區</option>
+            <option value="">東區</option>
+            <option value="">南區</option>
+            <option value="">西區</option>
+            <option value="">北區</option>
+            <option value="">中西區</option>
+          </select>
+          <div class="mapchoosecontent__choose">
+            <div class="mapchoosecontent__choose__location">
+              <label id="industry" for="location1">工業區</label>
+              <label class="btnLayerPool" data-id="points">辦公大樓</label>
+              <label class="btnLayerPool" data-id="temples">廟宇</label>
+              <label class="btnLayerPool" data-id="points">工廠</label>
+              <label class="btnLayerPool" data-id="tbike">腳踏車</label>
+              <label class="btnLayerPool" data-id="monorail">捷運站(輕軌)</label>
+              <label class="btnLayerPool" data-id="park">公園</label>
+              <label class="btnLayerPool" data-id="ac">活動中心</label>
+            </div>
+          </div>
+          <div class="mapchoosecontent__introduction" id="location1_intro">
+            <label class="mapchoosecontent__introduction__control" for="location1"></label>
+            <div class="mapchoosecontent__introduction__icon"></div>
+            <div class="mapchoosecontent__introduction__title">工業區</div>
+            <div class="mapchoosecontent__introduction__position">
+              <div class="mapchoosecontent__introduction__position__pic">
+                <img src="" alt="">
+              </div>
+              <div class="mapchoosecontent__introduction__position__text">
+                <div class="mapchoosecontent__introduction__position__name">點選地點名稱</div>
+                <div class="mapchoosecontent__introduction__position__address">長榮路320號34巷</div>
+              </div>
+            </div>
+            <div class="mapchoosecontent__introduction__text">文化立市，觀旅加值。台南是一座適合旅遊，更適合居住的城市。
+                                                             提到觀光旅遊，你會想到什麼呢？是乘載歷史記憶的古蹟</div>
+          </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.4/ol.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

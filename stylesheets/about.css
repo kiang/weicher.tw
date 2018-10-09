@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/* line 1, ../sass/modules/_normalize.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Tahoma, Arial, “PingFang SC”,  “Microsoft YaHei”, “WenQuanYi Micro Hei”;
+}
+
+/* line 7, ../sass/modules/_normalize.scss */
+li {
+  list-style: none;
+}
+
+/* line 10, ../sass/modules/_normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, ../sass/modules/_extendclass.scss */
+.header__container, .footer__container, .introduction__text {
+  width: 100%;
+  margin: 0 auto;
+}
+@media all and (min-width: 343px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .introduction__text {
+    max-width: 343px;
+  }
+}
+@media all and (min-width: 580px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .introduction__text {
+    max-width: 580px;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .introduction__text {
+    max-width: 880px;
+  }
+}
+@media all and (min-width: 1300px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container, .footer__container, .introduction__text {
+    max-width: 1300px;
+  }
+}
+
+/* line 5, ../sass/partials/_header.scss */
+header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+.header__container {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (min-width: 880px) {
+  /* line 9, ../sass/partials/_header.scss */
+  .header__container {
+    padding: 0 0 5px;
+  }
+}
+/* line 18, ../sass/partials/_header.scss */
+.header__container__logo {
+  display: block;
+  background-image: url("../img/logo-big@2x.png");
+  background-size: cover;
+  width: 100px;
+  height: 38px;
+}
+@media all and (min-width: 880px) {
+  /* line 18, ../sass/partials/_header.scss */
+  .header__container__logo {
+    width: 161px;
+    height: 60px;
+  }
+}
+/* line 29, ../sass/partials/_header.scss */
+.header__container__nav {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 4;
+  height: calc(100vh - 70px);
+  justify-content: space-between;
+}
+@media all and (min-width: 880px) {
+  /* line 29, ../sass/partials/_header.scss */
+  .header__container__nav {
+    height: auto;
+    padding-top: 20px;
+    position: static;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+/* line 48, ../sass/partials/_header.scss */
+.header__container__nav__items {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: white;
+}
+@media all and (min-width: 880px) {
+  /* line 48, ../sass/partials/_header.scss */
+  .header__container__nav__items {
+    width: auto;
+    flex-direction: row;
+    order: 2;
+  }
+}
+/* line 58, ../sass/partials/_header.scss */
+.header__container__nav__items a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  padding: 13px 0;
+  font-weight: 600;
+}
+@media all and (min-width: 880px) {
+  /* line 58, ../sass/partials/_header.scss */
+  .header__container__nav__items a {
+    margin: 0 15px;
+    padding: 13px 12px;
+    font-size: 17px;
+  }
+  /* line 70, ../sass/partials/_header.scss */
+  .header__container__nav__items a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-bottom: 5px solid #009a00;
+    width: 100%;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 83, ../sass/partials/_header.scss */
+  .header__container__nav__items .header_avtive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-bottom: 5px solid #009a00;
+    width: 100%;
+  }
+}
+/* line 95, ../sass/partials/_header.scss */
+.header__container__nav__icon {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+@media all and (min-width: 880px) {
+  /* line 95, ../sass/partials/_header.scss */
+  .header__container__nav__icon {
+    margin-top: 0;
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+/* line 105, ../sass/partials/_header.scss */
+.header__container__nav__icon a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+/* line 110, ../sass/partials/_header.scss */
+.header__container__nav__icon a:hover img {
+  opacity: 0.7;
+}
+/* line 113, ../sass/partials/_header.scss */
+.header__container__nav__icon a img {
+  width: 100%;
+}
+
+/* line 122, ../sass/partials/_header.scss */
+header label {
+  width: 26px;
+  height: 25px;
+  background-image: url("../img/menu@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 880px) {
+  /* line 122, ../sass/partials/_header.scss */
+  header label {
+    display: none;
+  }
+}
+/* line 132, ../sass/partials/_header.scss */
+header input {
+  display: none;
+}
+/* line 135, ../sass/partials/_header.scss */
+header .header__container__nav {
+  display: none;
+}
+@media all and (min-width: 880px) {
+  /* line 135, ../sass/partials/_header.scss */
+  header .header__container__nav {
+    display: flex;
+  }
+}
+/* line 141, ../sass/partials/_header.scss */
+header #burger:checked ~ .header__container__nav {
+  display: flex;
+  flex-direction: column;
+}
+/* line 145, ../sass/partials/_header.scss */
+header #burger:checked ~ label {
+  background-image: url("../img/close@2x.png");
+}
+
+/* line 6, ../sass/partials/_footer.scss */
+footer {
+  background-color: #f3f3f3;
+}
+
+/* line 9, ../sass/partials/_footer.scss */
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 38px;
+}
+
+/* line 17, ../sass/partials/_footer.scss */
+.footer__logo {
+  width: 88px;
+  height: 96px;
+}
+/* line 20, ../sass/partials/_footer.scss */
+.footer__logo img {
+  width: 88px;
+  height: 96px;
+}
+
+/* line 25, ../sass/partials/_footer.scss */
+.footer__copyright {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  margin-top: 14px;
+}
+@media all and (min-width: 580px) {
+  /* line 25, ../sass/partials/_footer.scss */
+  .footer__copyright {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 33, ../sass/partials/_footer.scss */
+.footer__icons {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+@media all and (min-width: 580px) {
+  /* line 33, ../sass/partials/_footer.scss */
+  .footer__icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+/* line 42, ../sass/partials/_footer.scss */
+.footer__icons a {
+  display: block;
+  width: 24px;
+  height: 23px;
+  margin: 0 8px;
+}
+/* line 47, ../sass/partials/_footer.scss */
+.footer__icons a:hover img {
+  opacity: 0.7;
+}
+/* line 50, ../sass/partials/_footer.scss */
+.footer__icons a img {
+  width: 100%;
+}
+
+/* line 3, ../sass/about.scss */
+.introduction {
+  padding-top: 30px;
+}
+/* line 8, ../sass/about.scss */
+.introduction__pic {
+  width: 100vw;
+  height: 75vw;
+  background-image: url("../img/pictureabout-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+@media all and (min-width: 880px) {
+  /* line 8, ../sass/about.scss */
+  .introduction__pic {
+    background-image: url("../img/picture@2x.png");
+    max-width: 765px;
+    height: 650px;
+    margin: 0 auto 30px;
+  }
+}
+@media all and (min-width: 1300px) {
+  /* line 8, ../sass/about.scss */
+  .introduction__pic {
+    max-width: 1140px;
+  }
+}
+/* line 25, ../sass/about.scss */
+.introduction__text {
+  background-color: #009a00;
+  padding: 36px;
+  margin: 16px auto 30px;
+}
+@media all and (min-width: 880px) {
+  /* line 25, ../sass/about.scss */
+  .introduction__text {
+    max-width: 765px;
+  }
+}
+@media all and (min-width: 1300px) {
+  /* line 25, ../sass/about.scss */
+  .introduction__text {
+    max-width: 1140px;
+  }
+}
+/* line 36, ../sass/about.scss */
+.introduction__text h2 {
+  font-size: 36px;
+  letter-spacing: 0.7px;
+  color: white;
+  margin-bottom: 18px;
+}
+/* line 42, ../sass/about.scss */
+.introduction__text p {
+  font-size: 17px;
+  line-height: 1.76;
+  color: white;
+}

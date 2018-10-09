@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/* line 1, ../sass/modules/_normalize.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Tahoma, Arial, “PingFang SC”,  “Microsoft YaHei”, “WenQuanYi Micro Hei”;
+}
+
+/* line 7, ../sass/modules/_normalize.scss */
+li {
+  list-style: none;
+}
+
+/* line 10, ../sass/modules/_normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 4, ../sass/modules/_extendclass.scss */
+.header__container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media all and (min-width: 343px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container {
+    max-width: 343px;
+  }
+}
+@media all and (min-width: 580px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container {
+    max-width: 580px;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container {
+    max-width: 880px;
+  }
+}
+@media all and (min-width: 1300px) {
+  /* line 4, ../sass/modules/_extendclass.scss */
+  .header__container {
+    max-width: 1300px;
+  }
+}
+
+/* line 5, ../sass/partials/_header.scss */
+header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+.header__container {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (min-width: 880px) {
+  /* line 9, ../sass/partials/_header.scss */
+  .header__container {
+    padding: 0 0 5px;
+  }
+}
+/* line 18, ../sass/partials/_header.scss */
+.header__container__logo {
+  display: block;
+  background-image: url("../img/logo-big@2x.png");
+  background-size: cover;
+  width: 100px;
+  height: 38px;
+}
+@media all and (min-width: 880px) {
+  /* line 18, ../sass/partials/_header.scss */
+  .header__container__logo {
+    width: 161px;
+    height: 60px;
+  }
+}
+/* line 29, ../sass/partials/_header.scss */
+.header__container__nav {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 4;
+  height: calc(100vh - 70px);
+  justify-content: space-between;
+}
+@media all and (min-width: 880px) {
+  /* line 29, ../sass/partials/_header.scss */
+  .header__container__nav {
+    height: auto;
+    padding-top: 20px;
+    position: static;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+/* line 48, ../sass/partials/_header.scss */
+.header__container__nav__items {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: white;
+}
+@media all and (min-width: 880px) {
+  /* line 48, ../sass/partials/_header.scss */
+  .header__container__nav__items {
+    width: auto;
+    flex-direction: row;
+    order: 2;
+  }
+}
+/* line 58, ../sass/partials/_header.scss */
+.header__container__nav__items a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  padding: 13px 0;
+  font-weight: 600;
+}
+@media all and (min-width: 880px) {
+  /* line 58, ../sass/partials/_header.scss */
+  .header__container__nav__items a {
+    margin: 0 15px;
+    padding: 13px 12px;
+    font-size: 17px;
+  }
+  /* line 70, ../sass/partials/_header.scss */
+  .header__container__nav__items a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-bottom: 5px solid #009a00;
+    width: 100%;
+  }
+}
+@media all and (min-width: 880px) {
+  /* line 83, ../sass/partials/_header.scss */
+  .header__container__nav__items .header_avtive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-bottom: 5px solid #009a00;
+    width: 100%;
+  }
+}
+/* line 95, ../sass/partials/_header.scss */
+.header__container__nav__icon {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+@media all and (min-width: 880px) {
+  /* line 95, ../sass/partials/_header.scss */
+  .header__container__nav__icon {
+    margin-top: 0;
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+/* line 105, ../sass/partials/_header.scss */
+.header__container__nav__icon a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+/* line 110, ../sass/partials/_header.scss */
+.header__container__nav__icon a:hover img {
+  opacity: 0.7;
+}
+/* line 113, ../sass/partials/_header.scss */
+.header__container__nav__icon a img {
+  width: 100%;
+}
+
+/* line 122, ../sass/partials/_header.scss */
+header label {
+  width: 26px;
+  height: 25px;
+  background-image: url("../img/menu@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 880px) {
+  /* line 122, ../sass/partials/_header.scss */
+  header label {
+    display: none;
+  }
+}
+/* line 132, ../sass/partials/_header.scss */
+header input {
+  display: none;
+}
+/* line 135, ../sass/partials/_header.scss */
+header .header__container__nav {
+  display: none;
+}
+@media all and (min-width: 880px) {
+  /* line 135, ../sass/partials/_header.scss */
+  header .header__container__nav {
+    display: flex;
+  }
+}
+/* line 141, ../sass/partials/_header.scss */
+header #burger:checked ~ .header__container__nav {
+  display: flex;
+  flex-direction: column;
+}
+/* line 145, ../sass/partials/_header.scss */
+header #burger:checked ~ label {
+  background-image: url("../img/close@2x.png");
+}
+
+/* line 2, ../sass/politics.scss */
+.container {
+  position: relative;
+}
+
+/* line 5, ../sass/politics.scss */
+.map {
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+@media all and (min-width: 880px) {
+  /* line 5, ../sass/politics.scss */
+  .map {
+    height: calc(100vh - 100px);
+  }
+}
+
+/* line 13, ../sass/politics.scss */
+.map__mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/mapmask@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media all and (min-width: 880px) {
+  /* line 13, ../sass/politics.scss */
+  .map__mask {
+    height: calc(100vh - 100px);
+  }
+}
+
+/* line 27, ../sass/politics.scss */
+.connect {
+  width: 91vw;
+  max-height: calc(100vh - 70px - 4vh);
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 0;
+  overflow: scroll;
+  /* Handle on hover */
+}
+@media all and (min-width: 880px) {
+  /* line 27, ../sass/politics.scss */
+  .connect {
+    padding-top: 30px;
+    width: 58vw;
+    max-height: calc(100vh - 100px - 4vh);
+  }
+}
+/* line 45, ../sass/politics.scss */
+.connect::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 3px;
+}
+/* line 49, ../sass/politics.scss */
+.connect::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 3px;
+}
+/* line 54, ../sass/politics.scss */
+.connect::-webkit-scrollbar-thumb:hover {
+  background: #73bf83;
+}
+/* line 58, ../sass/politics.scss */
+.connect__dialogue {
+  background-color: #f7f7f8;
+  width: 84%;
+  padding: 24px 30px;
+  position: relative;
+  margin: 0 auto;
+  display: none;
+}
+@media all and (min-width: 880px) {
+  /* line 58, ../sass/politics.scss */
+  .connect__dialogue {
+    display: block;
+  }
+}
+/* line 68, ../sass/politics.scss */
+.connect__dialogue__text {
+  line-height: 1.76;
+}
+/* line 71, ../sass/politics.scss */
+.connect__dialogue__pic {
+  width: 70.2px;
+  height: 79px;
+  background-image: url("../img/head-talk@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -35px;
+  bottom: -35px;
+}
+
+/* line 84, ../sass/politics.scss */
+.choosetext, .choosemap {
+  font-size: 15px;
+  color: #009a00;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 90, ../sass/politics.scss */
+.choosemap {
+  margin-top: 15px;
+}
+
+/* line 93, ../sass/politics.scss */
+.chooseitem {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+/* line 98, ../sass/politics.scss */
+.chooseitem a {
+  display: block;
+  margin: 0 16px 16px;
+  font-size: 17px;
+  color: white;
+  background-color: #009a00;
+  padding: 8px 30px;
+}
+/* line 105, ../sass/politics.scss */
+.chooseitem a:hover {
+  opacity: 0.7;
+}
+@media all and (min-width: 880px) {
+  /* line 98, ../sass/politics.scss */
+  .chooseitem a {
+    font-size: 24px;
+    padding: 8px 38px;
+    margin: 0 24px 16px;
+  }
+}
+
+/* line 115, ../sass/politics.scss */
+.choosemapicon {
+  display: block;
+  background-image: url("../img/btn-map-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 140px;
+  height: 52px;
+  margin: 16px auto 0;
+}
+@media all and (min-width: 880px) {
+  /* line 115, ../sass/politics.scss */
+  .choosemapicon {
+    background-image: url("../img/btn-map-l@2x.png");
+    width: 183px;
+    height: 52px;
+  }
+  /* line 128, ../sass/politics.scss */
+  .choosemapicon:hover {
+    background-image: url("../img/btn-map-l-hover@2x.png");
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features":[
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鹽田"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.13673,23.184937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "碗粿"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.194685,22.990558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蝦仁肉圓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.186605,22.985374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "四草綠色"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.243031,22.973979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小卷米粉"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.215916,23.021878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "菜粽"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.232469,23.010991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "浮水魚羹"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.238764,23.004552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "芒果"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.459666,23.123005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蘆筍"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.209296,23.097792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "四草綠色"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.213514,23.055857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "土托魚羹"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.215662,23.070626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文旦"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.218181,22.986946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蝦仁飯"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.214517,22.973661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "芒果"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.478816,23.043693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "擔仔麵"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.294744,23.106058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "碗粿"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.246496,23.174719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文旦"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.247869,23.181036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳯梨"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.295032,23.078693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "虱目魚"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.183007,23.227154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "火燒蝦"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[
+          120.179485,22.935748
+        ]
+      }
+    }
+  ]
+}
