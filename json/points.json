@@ -4,7 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "台南驛站文化園區"
+        "name": "台南驛站文化園區",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -16,7 +17,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "台南音樂廳"
+        "name": "台南音樂廳",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -28,7 +30,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "安億橋碼頭"
+        "name": "安億橋碼頭",
+        "icon": "point-location"
       },
       "geometry": {
         "type": "Point",
@@ -40,7 +43,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "臨安橋碼頭"
+        "name": "臨安橋碼頭",
+        "icon": "point-location"
       },
       "geometry": {
         "type": "Point",
@@ -52,7 +56,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "亞太國際棒球訓練中心"
+        "name": "亞太國際棒球訓練中心",
+        "icon": "baseball"
       },
       "geometry": {
         "type": "Point",
@@ -64,7 +69,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "台江文化中心"
+        "name": "台江文化中心",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -76,7 +82,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "天馬電台"
+        "name": "天馬電台",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -88,7 +95,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "台南市新總圖書館"
+        "name": "台南市新總圖書館",
+        "icon": "library"
       },
       "geometry": {
         "type": "Point",
@@ -100,7 +108,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "冷凍運籌中心"
+        "name": "冷凍運籌中心",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -112,7 +121,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "沙崙綠能科學城"
+        "name": "沙崙綠能科學城",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -124,7 +134,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "南科國家級檢驗中心"
+        "name": "南科國家級檢驗中心",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -136,7 +147,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "國家圖書館南部分館"
+        "name": "國家圖書館南部分館",
+        "icon": "library"
       },
       "geometry": {
         "type": "Point",
@@ -148,7 +160,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "岸內糖廠(影視基地)"
+        "name": "岸內糖廠(影視基地)",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -160,7 +173,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "新營糖廠(主題樂園)"
+        "name": "新營糖廠(主題樂園)",
+        "icon": "activity"
       },
       "geometry": {
         "type": "Point",
@@ -172,7 +186,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "安平港"
+        "name": "安平港",
+        "icon": "point-location"
       },
       "geometry": {
         "type": "Point",
@@ -184,7 +199,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "南科擴編"
+        "name": "南科擴編",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -196,7 +212,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "七股科工區"
+        "name": "七股科工區",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -208,7 +225,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "農產品冷鏈物流中心"
+        "name": "農產品冷鏈物流中心",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -220,7 +238,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "循環再生專區"
+        "name": "循環再生專區",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -232,7 +251,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "公共住宅"
+        "name": "公共住宅",
+        "icon": "house"
       },
       "geometry": {
         "type": "Point",
@@ -244,7 +264,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "化石地質公園"
+        "name": "化石地質公園",
+        "icon": "park"
       },
       "geometry": {
         "type": "Point",
@@ -256,7 +277,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "北頭洋飛番文化園區"
+        "name": "北頭洋飛番文化園區",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -268,7 +290,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "札哈木原住民族文化創藝亮點產業園區"
+        "name": "札哈木原住民族文化創藝亮點產業園區",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -280,7 +303,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "南山生命紀念園區"
+        "name": "南山生命紀念園區",
+        "icon": "point-location"
       },
       "geometry": {
         "type": "Point",
@@ -292,7 +316,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "官田工業區活化"
+        "name": "官田工業區活化",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -304,7 +329,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "麻豆工業區活化"
+        "name": "麻豆工業區活化",
+        "icon": "factory"
       },
       "geometry": {
         "type": "Point",
@@ -316,7 +342,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "智慧城市辦公室"
+        "name": "智慧城市辦公室",
+        "icon": "building"
       },
       "geometry": {
         "type": "Point",
@@ -328,7 +355,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "台南市美術館"
+        "name": "台南市美術館",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -340,7 +368,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "新化歷史街區"
+        "name": "新化歷史街區",
+        "icon": "culture"
       },
       "geometry": {
         "type": "Point",
@@ -352,7 +381,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "國立科學教育體驗未來館"
+        "name": "國立科學教育體驗未來館",
+        "icon": "library"
       },
       "geometry": {
         "type": "Point",

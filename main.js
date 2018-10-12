@@ -184,8 +184,17 @@ var styleLine = function(feature) {
 
 var stylePoints = function(f) {
   var p = f.getProperties();
-  var pStyle = styleRed.clone();
-  pStyle.getText().setText(p.name);
+  if(p.icon) {
+    var pStyle = new ol.style.Style({
+      image: new ol.style.Icon({
+        scale: 0.3,
+        src: 'img/' + p.icon + '@2x.png'
+      })
+    });
+  } else {
+    var pStyle = styleRed.clone();
+    pStyle.getText().setText(p.name);
+  }
   return pStyle;
 }
 

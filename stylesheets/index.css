@@ -316,7 +316,6 @@ figure {
 @media all and (min-width: 880px) {
   /* line 15, ../sass/index.scss */
   figure {
-    max-width: 880px;
     margin: 0 auto;
     position: relative;
   }
