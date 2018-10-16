@@ -304,7 +304,7 @@ footer {
 .introduction__pic {
   width: 100vw;
   height: 75vw;
-  background-image: url("../img/run_mobile.jpg");
+  background-image: url("../img/pictureabout-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -312,7 +312,7 @@ footer {
 @media all and (min-width: 880px) {
   /* line 8, ../sass/about.scss */
   .introduction__pic {
-    background-image: url("../img/run.jpg");
+    background-image: url("../img/picture@2x.png");
     max-width: 765px;
     height: 650px;
     margin: 0 auto 30px;
