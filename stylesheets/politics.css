@@ -396,3 +396,7 @@ header #burger:checked ~ label {
     background-image: url("../img/btn-map-l-hover@2x.png");
   }
 }
+
+#controllist {
+  display: none;
+}
