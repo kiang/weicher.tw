@@ -17,6 +17,16 @@ var styleRed = new ol.style.Style({
   })
 });
 
+var styleZone = new ol.style.Style({
+  stroke: new ol.style.Stroke({
+      color: 'rgba(255,255,0,1)',
+      width: 3
+  }),
+  fill: new ol.style.Fill({
+      color: 'rgba(255,255,255,0.1)'
+  })
+});
+
 var styleParking = new ol.style.Style({
   image: new ol.style.Icon({
     scale: 0.3,
@@ -198,7 +208,46 @@ var stylePoints = function(f) {
   return pStyle;
 }
 
+var mainPool = {
+  culture: {
+    title: '文化首府',
+    layers: ['bus', 'tbike', 'monorail'],
+    icon: 'temple-b@2x.png',
+    text: '<h3>文化立市：文史觀旅城市</h3><p>打造行人為主體的歷史街區，結合古蹟、文資與美食的城市博物館，並打造多元藝文展演空間，並串聯山海大台南觀旅資源。</p>'
+  },
+  economic: {
+    title: '產經重鎮',
+    layers: ['points'],
+    icon: 'factory-b@2x.png',
+    text: '<h3>百業興盛：產經發展城市</h3><p>實現規模農業經濟與智慧產銷調節，以南科沙崙雙引擎帶動大台南產業發展，並將安平港打造為北觀光、南自貿的智慧港灣。</p>'
+  },
+  smart: {
+    title: '智慧新都',
+    layers: ['tainan'],
+    icon: 'building-b@2x.png',
+    text: '<h3>數據治理：智慧服務城市</h3><p>成立智慧城市辦公室，將智慧服務扣連青創動能，推出數位市民卡強化公共服務及數據治理，進而打造「全場域」的智慧服務城市。</p>'
+  },
+  creative: {
+    title: '創生城鄉',
+    layers: ['ac'],
+    icon: 'activity-b@2x.png',
+    text: '<h3>區域平衡：均衡發展城市</h3><p>於大台南地理中心，打造智慧數位且綠能循環的未來城鎮，並串聯高快速交通網絡、提供綿密多點式公共服務，全力消弭區域落差。</p>'
+  },
+  hope: {
+    title: '希望家園',
+    layers: ['park'],
+    icon: 'park-b@2x.png',
+    text: '<h3>溫暖關懷：宜居築夢城市</h3><p>解決青年問題，增加勞安基金照顧勞工、成立勞檢處落實勞檢，多元滿足育嬰及教育服務，打造有感青創平台。並致力共榮多元族群，且建置愛心倉儲及共同廚房等，增加對弱老的照顧。</p>'
+  }
+};
+
 var layerPool = {
+  bus: new ol.layer.Vector({
+    source: new ol.source.Vector({
+      url: 'json/bus.json',
+      format: new ol.format.GeoJSON()
+    })
+  }),
   points: new ol.layer.Vector({
     source: new ol.source.Vector({
       url: 'json/points.json',
@@ -277,7 +326,8 @@ var zoneSource = new ol.source.Vector({
 });
 
 var vector = new ol.layer.Vector({
-  source: zoneSource
+  source: zoneSource,
+  style: styleZone
 });
 
 var baseLayer = new ol.layer.Tile({
@@ -367,16 +417,12 @@ map.on('singleclick', function(evt) {
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
     var p = feature.getProperties();
     if(false === nameFetched) {
+      if(p.路線) {
+        p.name = '輕軌::' + p.路線;
+      }
       if(p.name) {
         nameFetched = true;
         $('div.mapchoosecontent__introduction__position__name').html(p.name);
-        var coordinates = feature.getGeometry().getCoordinates();
-        if(isNaN(coordinates[0])) {
-          map.getView().setCenter(coordinates[0]);
-        } else {
-          map.getView().setCenter(coordinates);
-        }
-        map.getView().setZoom(15);
       }
     }
     if(p.areas) {
@@ -391,27 +437,27 @@ map.on('singleclick', function(evt) {
   $('input#controlmapchoosecontent').prop('checked', false);
 });
 
-var currentShowingLayer = false;
-var vectorSource, vectorReady = {};
+var currentShowingLayers = false;
+var vectorReady = {};
+var currentTopic = '';
 $('label.btnLayerPool').click(function() {
-  if(false !== currentShowingLayer) {
-    map.removeLayer(layerPool[currentShowingLayer]);
+  $('input#controlmapchoosecontent').prop('checked', true);
+  if(false !== currentShowingLayers) {
+    for(k in currentShowingLayers) {
+      map.removeLayer(layerPool[currentShowingLayers[k]]);
+    }
   }
-  var layerId = $(this).attr('data-id');
-  map.addLayer(layerPool[layerId]);
-  vectorSource = layerPool[layerId].getSource();
-  if(!vectorReady[layerId]) {
-    vectorSource.once('change', function(e) {
-      if(vectorSource.getState() === 'ready') {
-        map.getView().fit(vectorSource.getExtent());
-        vectorReady[layerId] = true;
-        $('input#controlmapchoosecontent').prop('checked', true);
-      }
-    });
-  } else {
-    map.getView().fit(vectorSource.getExtent());
+  currentShowingLayers = [];
+  currentTopic = $(this).attr('data-id');
+  $('div.mapchoosecontent__introduction__title').html(mainPool[currentTopic].title);
+  $('div.mapchoosecontent__introduction__icon > img').attr('src', baseUrl + '/img/' + mainPool[currentTopic].icon);
+  $('div.mapchoosecontent__introduction__text').html(mainPool[currentTopic].text);
+  for(k in mainPool[currentTopic].layers) {
+    var layerKey = mainPool[currentTopic].layers[k];
+    currentShowingLayers.push(layerKey);
+    vectorReady[layerKey] = false;
+    map.addLayer(layerPool[layerKey]);
   }
-  currentShowingLayer = layerId;
   return false;
 });
 
@@ -431,7 +477,7 @@ zoneSource.on('change', function(e) {
           map.getView().fit(f.getGeometry());
         }
       })
-
+      $('input#controlmapchoosecontent').prop('checked', true);
     });
   }
 })
